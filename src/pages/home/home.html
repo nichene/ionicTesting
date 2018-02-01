@@ -1,0 +1,32 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Travel ^^
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding no-bounce>
+  Hi, <i>{{nomeQualquer}}.</i>
+  <br>
+  <ion-card>
+    <img src="assets/imgs/card-amsterdam.png"/>
+    <div class="card-title">Amsterdam</div>
+    <div class="card-subtitle">hey ho Lets go</div>
+  </ion-card>
+  <ion-card>
+    <button ion-item (click)="alerta()">
+      <ion-icon name="md-flower" item-start></ion-icon>
+      flowers!
+    </button>
+  </ion-card>
+  <ion-card>
+    <button ion-item (click)="alerta()">
+      <ion-icon name="md-bicycle" item-start></ion-icon>
+      bikes!
+    </button>
+  </ion-card>
+  <br>
+  <button ion-button color="dark" outline round (click)="openFirstPage()">info.</button>
+
+</ion-content>
